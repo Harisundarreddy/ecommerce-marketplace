@@ -30,7 +30,8 @@ def product_list(request):
         CustomOrder.objects.create(
             product = product,
             custom_text = custom_text,
-            custom_image=custom_image
+            custom_image=custom_image,
+            user=request.user
         )
 
         return redirect('product_list')

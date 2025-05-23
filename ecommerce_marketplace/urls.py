@@ -16,11 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from marketplace.views import product_list,mock_payment
+from dashboard.views import buyer_dashboard
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',product_list,name='product_list'),
     path('mock-payment/', mock_payment, name='mock_payment'),
+    path('dashboard/', buyer_dashboard, name='buyer_dashboard'),
 ]
 
 from django.conf import settings

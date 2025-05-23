@@ -30,9 +30,7 @@
       {% for product in products %}
         <div class="col">
           <div class="card h-100">
-            <!-- {% if product.image %}
-              <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}">
-            {% endif %} -->
+            
             {% if product.image %}
                 <img src="{{ product.image.url }}" class="card-img-top" alt="{{ product.name }}" style="object-fit: cover; height: 200px;">
             {% else %}
